@@ -4,6 +4,7 @@ name = input("input your name of the csv file: ")
 name2 = input("input the title of your graph: ")
 f = open(name)
 data = csv.reader(f)
+next(data)
 x = []
 y = []
 for row in data:
